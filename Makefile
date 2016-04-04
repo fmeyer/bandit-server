@@ -10,15 +10,12 @@ rerun: generate
 
 get:
 	go get github.com/skelterjohn/rerun/...
-	go get github.com/stretchr/testify/assert/...
 	go get github.com/jteeuwen/go-bindata/...
-	go get github.com/dropbox/godropbox/memcache/...
-	go get github.com/dropbox/godropbox/net2/...
 
 generate: get
 	$(GOPATH)/bin/go-bindata -o assets/assets.go -pkg=assets -prefix=assets -ignore=.\*.go assets
 
-build: generate
+build: generate 
 	@GOOS=darwin GOARCH=amd64 go build -o $(PKG)/darwin_amd64/bandit-server bandit-server.go
 	@GOOS=linux GOARCH=amd64 go build -o $(PKG)/linux_amd64/bandit-server bandit-server.go
 	@GOOS=linux GOARCH=386 go build -o $(PKG)/linux_386/bandit-server bandit-server.go

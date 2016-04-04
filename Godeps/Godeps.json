@@ -1,0 +1,35 @@
+{
+	"ImportPath": "github.com/peleteiro/bandit-server",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v60",
+	"Deps": [
+		{
+			"ImportPath": "github.com/dropbox/godropbox/container/set",
+			"Rev": "3c8a9189a8748951b62c6a48c072448b2fd4cac7"
+		},
+		{
+			"ImportPath": "github.com/dropbox/godropbox/errors",
+			"Rev": "3c8a9189a8748951b62c6a48c072448b2fd4cac7"
+		},
+		{
+			"ImportPath": "github.com/dropbox/godropbox/math2/rand2",
+			"Rev": "3c8a9189a8748951b62c6a48c072448b2fd4cac7"
+		},
+		{
+			"ImportPath": "github.com/dropbox/godropbox/memcache",
+			"Rev": "3c8a9189a8748951b62c6a48c072448b2fd4cac7"
+		},
+		{
+			"ImportPath": "github.com/dropbox/godropbox/net2",
+			"Rev": "3c8a9189a8748951b62c6a48c072448b2fd4cac7"
+		},
+		{
+			"ImportPath": "github.com/dropbox/godropbox/resource_pool",
+			"Rev": "3c8a9189a8748951b62c6a48c072448b2fd4cac7"
+		},
+		{
+			"ImportPath": "github.com/dropbox/godropbox/sync2",
+			"Rev": "3c8a9189a8748951b62c6a48c072448b2fd4cac7"
+		}
+	]
+}

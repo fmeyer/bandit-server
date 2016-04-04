@@ -21,7 +21,7 @@ func NewMemcached(address string) Memcached {
 	options := net2.ConnectionOptions{MaxActiveConnections: 2, MaxIdleConnections: 1, MaxIdleTime: &maxIdleTime}
 
 	manager := memcache.NewStaticShardManager([]string{address}, func(key string, numShard int) int { return 0 }, options)
-	return Memcached{mc: memcache.NewShardedClient(manager)}
+	return Memcached{mc: memcache.NewShardedClient(manager, false)}
 }
 
 func (v Memcached) mcGet(kind string, experiment string, arm string) int64 {
